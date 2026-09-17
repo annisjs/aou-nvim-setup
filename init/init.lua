@@ -261,6 +261,14 @@ require("lazy").setup({
           never_run = { "yaml" },
         },
       },
+    },
+    {
+      "benlubas/molten-nvim",
+      build = ":UpdateRemotePlugins",
+      init = function()
+        vim.g.molten_auto_open_output = false
+        vim.g.molten_output_win_max_height = 15
+      end,
     }
 })
 vim.lsp.enable("pylsp")
