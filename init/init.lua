@@ -240,6 +240,7 @@ require("lazy").setup({
       dependencies = {
         "jmbuhr/otter.nvim",
         "nvim-treesitter/nvim-treesitter",
+        "benlubas/molten-nvim",
       },
       opts = {
         lspFeatures = {
